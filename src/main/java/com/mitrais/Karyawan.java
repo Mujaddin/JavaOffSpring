@@ -1,13 +1,11 @@
 package com.mitrais;
 
 import java.sql.Date;
-import java.util.Set;
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "employeeTable")
-public class Employee {
+public class Karyawan {
 	@Id
 	@Column(name = "emp_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,7 +18,25 @@ public class Employee {
 	private String gender;
 	@Column(name = "dob")
 	private Date dob;
-//	@OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
-//	private Set<OfficeLocation> officeLocations;
+	// @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
+	// private Set<OfficeLocation> officeLocations;
+public Karyawan(){
+	
+}
+public long getEmpId() {
+	return empId;
+}
+public String getFirstName() {
+	return firstName;
+}
+public String getLastName() {
+	return lastName;
+}
+public String getGender() {
+	return gender;
+}
+public Date getDob() {
+	return dob;
+}
 
 }
