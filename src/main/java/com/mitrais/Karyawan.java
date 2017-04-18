@@ -38,5 +38,20 @@ public String getGender() {
 public Date getDob() {
 	return dob;
 }
+public void setEmpId(long empId) {
+	this.empId = empId;
+}
+public void setFirstName(String firstName) {
+	this.firstName = firstName;
+}
+public void setLastName(String lastName) {
+	this.lastName = lastName;
+}
+public void setGender(String gender) {
+	this.gender = gender;
+}
+public void setDob(Date dob) {
+	this.dob = dob;
+}
 
 }
